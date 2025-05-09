@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<robot name="my_first_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:property name="robot_name" value="my_first_robot" />
+<!-- Robot links -->
+<xacro:include filename="$(find my_first_robot)/urdf/my_first_robot_links.xacro" />
+<!-- Robot joints -->
+<xacro:include filename="$(find my_first_robot)/urdf/my_first_robot_joints.xacro" />
+<!-- Robot colors -->
+<xacro:include filename="$(find my_first_robot)/urdf/my_first_robot_gazebo_plugins.xacro" />
+<!-- Motor, Camera and Lidar Simulation -->
+<xacro:include filename="$(find my_first_robot)/urdf/my_first_robot_gazebo_elements.xacro" />
+</robot>

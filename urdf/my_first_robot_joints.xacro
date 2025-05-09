@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<robot>
+<!-- Define Joints -->
+<!-- Right Wheel Joint Back-->
+<joint type="continuous" name="right_wheel_hinge_back">
+    <origin xyz="-0.2 -0.30 0" rpy="0 0 0" />
+    <parent link="chassis"/>
+    <child link="right_wheel_back" />
+    <axis xyz="0 1 0" rpy="0 0 0" />
+    <limit effort="10000" velocity="1000" />
+    <dynamics damping="1.0" friction="1.0" />
+</joint>
+<!-- Right Wheel Joint Front-->
+<joint type="continuous" name="right_wheel_hinge_front">
+ <origin xyz="0.2 -0.30 0" rpy="0 0 0" />
+ <parent link="chassis"/>
+ <child link="right_wheel_front" />
+ <axis xyz="0 1 0" rpy="0 0 0" />
+ <limit effort="10000" velocity="1000" />
+ <dynamics damping="1.0" friction="1.0" />
+</joint>
+<!-- Left Wheel Joint Back-->
+<joint type="continuous" name="left_wheel_hinge_back">
+ <origin xyz="-0.2 0.30 0" rpy="0 0 0" />
+ <parent link="chassis"/>
+ <child link="left_wheel_back" />
+ <axis xyz="0 1 0" rpy="0 0 0" />
+ <limit effort="10000" velocity="1000" />
+ <dynamics damping="1.0" friction="1.0" />
+</joint>
+<!-- Left Wheel Joint Front-->
+<joint type="continuous" name="left_wheel_hinge_front">
+ <origin xyz="0.2 0.30 0" rpy="0 0 0" />
+ <parent link="chassis"/>
+ <child link="left_wheel_front" />
+ <axis xyz="0 1 0" rpy="0 0 0" />
+ <limit effort="10000" velocity="1000" />
+ <dynamics damping="1.0" friction="1.0" />
+</joint>
+
+<!-- Camera Joint -->
+<joint name="camera_joint" type="fixed">
+<origin xyz="0.26 0 0" rpy="0 0 0" />
+<parent link="chassis"/>
+<child link="camera" />
+<axis xyz="0 1 0"/>
+</joint>
+<!-- Hokoyu Joint -->
+<joint name="hokuyo_joint" type="fixed">
+ <origin xyz="0.2 0 0.2" rpy="0 0 0" />
+ <parent link="chassis"/>
+ <child link="hokuyo" />
+ <axis xyz="0 1 0"/>
+</joint>
+<joint name="robot_footprint_joint" type="fixed">
+<origin xyz="0 0 0" rpy="0 0 0" />
+<parent link="robot_footprint"/>
+<child link="chassis" />
+</joint>
+</robot>
