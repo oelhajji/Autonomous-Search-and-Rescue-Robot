@@ -2,6 +2,8 @@
 
 This project simulates an **Autonomous Search and Rescue Robot** using ROS (Robot Operating System), integrating **face detection**, **intelligent control**, and **mapping capabilities** to navigate an environment, locate individuals, and display real-time maps.
 
+![SLAM mapping](image1.png)
+
 ## Project Overview
 
 The system is designed for autonomous operation in search and rescue scenarios. It utilizes a TurtleBot3 in a simulated Gazebo environment to:
