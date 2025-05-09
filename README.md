@@ -1,8 +1,8 @@
-# Autonomous Search and Rescue Robot 🤖🚨
+# Autonomous Search and Rescue Robot 
 
 This project simulates an **Autonomous Search and Rescue Robot** using ROS (Robot Operating System), integrating **face detection**, **intelligent control**, and **mapping capabilities** to navigate an environment, locate individuals, and display real-time maps.
 
-## 📌 Project Overview
+## Project Overview
 
 The system is designed for autonomous operation in search and rescue scenarios. It utilizes a TurtleBot3 in a simulated Gazebo environment to:
 - Navigate autonomously using SLAM and path planning
@@ -10,14 +10,14 @@ The system is designed for autonomous operation in search and rescue scenarios. 
 - Display a dynamically built map of the environment
 - Respond to hand gestures for manual control
 
-## 🧠 Project Objectives
+## Project Objectives
 
 - Apply ROS concepts and packages in a practical simulation
 - Explore and use Gazebo and RViz platforms
 - Integrate computer vision techniques (face and hand detection)
 - Simulate intelligent autonomous robot behavior
 
-## 🧰 Technologies Used
+## Technologies Used
 
 - **ROS Noetic** on Ubuntu 20.04
 - **Gazebo** for simulation
@@ -27,7 +27,7 @@ The system is designed for autonomous operation in search and rescue scenarios. 
 - **GMapping** for SLAM
 - **Python** & **Blender** for 3D frame creation
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
@@ -60,6 +60,7 @@ source devel/setup.bash
 
 # Export TurtleBot3 model
 export TURTLEBOT3_MODEL=burger
+```
 
 ### Launch Simulation
 
